@@ -1,11 +1,43 @@
+import { useEffect, useState } from 'react';
 import perso from '../assets/bust-1.png'
+import { Blurhash } from "react-blurhash";
 
 const Inicio = () => {
+  const [imageLoaded
+    , setImageLoaded
+  ] = useState(false);
+  const src = perso;
+
+  useEffect(() => {
+    const img = new Image();
+
+    img.onload = () => {
+      setImageLoaded(true)
+    }
+
+    img.src = src;
+
+  }, [src]);
+
   return (
     <div className='h-full p-2 md:p-8' id='inicio'>
+
       <div className="my-12 shadow-xl dark:bg-slate-900 bg-slate-50 rounded-xl">
         <div className='grid items-center justify-between h-full grid-cols-2 gap-2'>
-          <div className='flex items-center justify-center'> <img src={perso} alt="yo" className='w-full md:w-1/2' /></div>
+          <div className='flex items-center justify-center'> <>
+            {!imageLoaded ?
+              <div className="w-1/2 p-8 ">
+                <Blurhash
+                  hash="LDSs50M{~q?bRjWB%Mt7?bt7D%M{"
+                  width={400}
+                  height={450}
+                  resolutionX={32}
+                  resolutionY={32}
+                  punch={1}
+                /> </div> :
+              <img src={perso} alt="yo" className='w-full md:w-1/2' />}
+
+          </></div>
           <div className='flex items-center justify-center'><h1 className="text-4xl leading-loose md:text-7xl text-brown-400">¡Hola! Soy <span className="text-brown-700">Carlos <span className="text-brown-800">Crispin</span></span></h1></div>
         </div>
         <div className='justify-center p-8 tracking-wide text-justify text-md md:text-3xl'>
