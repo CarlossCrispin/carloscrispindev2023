@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Satoshi', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+
+/* Color Theme Swatches in Hex */
+.green-woods-with-man-walking-1-hex { color: #9CA653; }
+.green-woods-with-man-walking-2-hex { color: #6C733D; }
+.green-woods-with-man-walking-3-hex { color: #3E402D; }
+.green-woods-with-man-walking-4-hex { color: #B9BF8E; }
+.green-woods-with-man-walking-5-hex { color: #D8D9C5; }
+
+/* Color Theme Swatches in RGBA */
+.green-woods-with-man-walking-1-rgba { color: rgba(156, 165, 82, 1); }
+.green-woods-with-man-walking-2-rgba { color: rgba(108, 114, 60, 1); }
+.green-woods-with-man-walking-3-rgba { color: rgba(61, 63, 45, 1); }
+.green-woods-with-man-walking-4-rgba { color: rgba(185, 191, 141, 1); }
+.green-woods-with-man-walking-5-rgba { color: rgba(216, 216, 197, 1); }
+
+/* Color Theme Swatches in HSLA */
+.green-woods-with-man-walking-1-hsla { color: hsla(67, 33, 48, 1); }
+.green-woods-with-man-walking-2-hsla { color: hsla(67, 30, 34, 1); }
+.green-woods-with-man-walking-3-hsla { color: hsla(67, 16, 21, 1); }
+.green-woods-with-man-walking-4-hsla { color: hsla(67, 28, 65, 1); }
+.green-woods-with-man-walking-5-hsla { color: hsla(61, 20, 81, 1); }
