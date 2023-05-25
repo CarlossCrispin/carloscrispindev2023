@@ -1,9 +1,9 @@
-import perso from '../../public/images/bust-1.png'
+import perso from '../assets/bust-1.png'
 
 const Inicio = () => {
   return (
     <div className='h-full p-2 md:p-8' id='inicio'>
-      <div className="shadow-xl dark:bg-slate-900 bg-slate-50 rounded-xl">
+      <div className="my-12 shadow-xl dark:bg-slate-900 bg-slate-50 rounded-xl">
         <div className='grid items-center justify-between h-full grid-cols-2 gap-2'>
           <div className='flex items-center justify-center'> <img src={perso} alt="yo" className='w-full md:w-1/2' /></div>
           <div className='flex items-center justify-center'><h1 className="text-4xl leading-loose md:text-7xl text-brown-400">¡Hola! Soy <span className="text-brown-700">Carlos <span className="text-brown-800">Crispin</span></span></h1></div>
